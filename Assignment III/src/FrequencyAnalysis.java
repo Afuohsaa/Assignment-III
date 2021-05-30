@@ -25,7 +25,22 @@ public class FrequencyAnalysis {
 		
 		//Display user menu:
 		Scanner scanner1 = new Scanner(System.in);
+		System.out.println("\n\nOption:\n1) Take Replacement Rule\n2) Exit");
 		
+		int Option;
+		
+		Scanner scanner2 = new Scanner(System.in);
+		System.out.println("\nEnter 1 or 2: ");
+		Option = scanner.nextInt();
+		
+		if(Option== 1) {
+			
+		}
+		else if(Option==2) {
+			System.exit(0);
+		}
+		else{
+			System.out.println("Not a valid number!");
 	}
 
-}
+}}
