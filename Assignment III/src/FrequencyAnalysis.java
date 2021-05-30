@@ -10,7 +10,7 @@ public class FrequencyAnalysis {
 		cipherText = cipherText.toUpperCase(); //We just want all text in uppercase
 
 		//Counting of character frequency
-		System.out.println("Character\tFrequency");
+		System.out.println("Character and Frequency are: ");
 		for(char ch ='A'; ch<='Z'; ch++) {
 			
 			int n = 0;
@@ -20,7 +20,7 @@ public class FrequencyAnalysis {
 					n++;
 			}
 			if (n!=0)
-			System.out.println(ch + " --> " + n);	
+			System.out.print(ch + "->" + n + ", ");	
 		}
 	}
 
