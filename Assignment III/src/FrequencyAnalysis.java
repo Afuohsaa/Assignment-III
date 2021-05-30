@@ -20,7 +20,7 @@ public class FrequencyAnalysis {
 					n++;
 			}
 			if (n!=0)
-			System.out.println(ch + "\t\t" + n);	
+			System.out.println(ch + " --> " + n);	
 		}
 	}
 
