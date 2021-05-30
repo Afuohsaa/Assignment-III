@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class FrequencyAnalysis {
 
@@ -9,13 +10,17 @@ public class FrequencyAnalysis {
 		cipherText = cipherText.toUpperCase(); //We just want all text in uppercase
 
 		//Counting of character frequency
+		System.out.println("Character\tFrequency");
 		for(char ch ='A'; ch<='Z'; ch++) {
 			
 			int n = 0;
 			for(int i=0; i<cipherText.length(); i++) {
 				
-				
+				if(ch == cipherText.charAt(i))
+					n++;
 			}
+			if (n!=0)
+			System.out.println(ch + "\t\t" + n);	
 		}
 	}
 
