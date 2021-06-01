@@ -34,28 +34,31 @@ public class FrequencyAnalysis {
 		Option = scanner2.nextInt();
 		
 		if(Option== 1) {
-			
-			Scanner input = new Scanner(System.in);
-			System.out.println("Enter the Cipher Text Again: ");
-			String str = input.nextLine();
+	
+			//Scanner input = new Scanner(System.in);
+			//System.out.println("Enter the Cipher Text Again: ");
+			//input=scanner;
 			System.out.println("Enter the character to replace");
-			char ch = input.next().charAt(0);
+			//String str = scanner.nextLine();
+			//System.out.println("Enter the character to replace");
+			char ch = scanner.next().charAt(0);
 			System.out.println("Enter the character to be replaced with");
-			char newCh = input.next().charAt(0);
+			char newCh = scanner.next().charAt(0);
+			String str = scanner.nextLine();
 			String newText = str.replace(ch, newCh);
 			System.out.println(newText);
 			newText =newText.toUpperCase();
 			
-			for(char ch1 ='A';ch1<='Z'; ch1++ ) {
-			int m = 0;
+			for(char ch1 ='A';ch1<='Z';ch1++ ) {
+			int n = 0;
 			for(int j=0; j<newText.length(); j++) {
 				
 				if(ch1 == newText.charAt(j))
-					m++;
+					n++;
 				
 			}
-			if(m!=0);
-			System.out.print(ch1 + "->" + m + ", ");	
+			if(n>0);
+			System.out.print(ch1 + "->" + n + ", ");	
 		}
 	}
 		else if(Option==2) {
@@ -63,5 +66,5 @@ public class FrequencyAnalysis {
 		}
 		else{
 			System.out.println("Not a valid number!");
-
+return;
 }}}
